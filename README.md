@@ -1,3 +1,12 @@
+# I AM V
+**Portfolio of a Designer, Photographer, Traveller** 
+
+A Portfolio created for the CodersCamp 2020 edition.
+
+Live Demo: https://vieraboschkova.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
+
+Continue reading below, to find the tasks requirements.
+
 # CodersCamp 2020 - Projekt HTML & CSS
 **CodersCamp (coderscamp.edu.pl) - Największy otwarty kurs programowania webowego** 
 
