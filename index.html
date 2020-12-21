@@ -2,83 +2,239 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
+    <title>I AM V</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type='image/x-icon' href='./favicon.ico'/>
     <script src="https://kit.fontawesome.com/63322813a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container" id="home">
+    <div class="toTop"><a href=#home><i class="far fa-arrow-alt-circle-up"></i></a></div>
         <header class="header">
-            <h1 class="header-logo"><a href=#home>&lt;BS&gt;</a></h1>
+            <h1 class="header-logo" tabindex="0">
+                <a href=#home>vBS</a>
+            </h1>
             <nav class="header-navigation">
-                <ul class="header-menu">
-                    <!-- <li class="header-item"><a href=#><i class="fas fa-warehouse"></i></a></li> -->
+                <div id="menuToggle">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="header-menu" id="#menu">
                     <li class="header-item"><a href=#about>ABOUT</a></li>
-                    <li class="header-item"><a href=#ideas>IDEAS</a></li>
-                    <li class="header-item"><a href=#travels>TRAVELS</a></li>
-                    <li class="header-item"><a href=#findme>FIND ME</a></li>
+                    <li class="header-item"><a href=#skills>SKILLS</a></li>
+                    <li class="header-item"><a href=#gallery>GALLERY</a></li>
+                    <li class="header-item"><a href=#contact>CONTACT</a></li>
                 </ul>
+            </div>
             </nav>
         </header>
 
         <section class="hero">
-            <div class="hero-img">
-                <img src="" alt="">
-            </div>
-            <h2>I AM W.</h2>
-            <p>Do you want to talk about it?</p>
+            <h2 class="hero-header">I AM V</h2>
+            <p class="hero-content"></p>
             <div class="hero-buttons">
-                <button class="hero-button" type="button" >YES! JA! OUI! TAK!</button>
-                <button class="hero-button" disabled>NO? NEIN? NON? NIE?</button>
+                <button class="hero-button" type="button" >Send me a message</button>
+                <button class="hero-button">Look at my works</button>
             </div>
         </section>
 
-        <!-- <div class="row-break"></div> -->
+        
 
         <main>
-            <section class="section-container about" id="about">
+            <section class="about" id="about">
                 <div class="row-break"></div>
-                <div class="about-container">
-                    <div class="about-img">
-                        <img src="https://via.placeholder.com/300" alt="">
+                <div class="about-container section-container row">
+                    <div class="about-img column">
+                        <img src="./assets/BRASILIA_014.jpg" alt="Parlament in Brasilia">
                     </div>
-                    <div class="about-content">
-                        <h3 class="about-header">What is it, this thing about me?</h3>
-                        <p class="about-text">I was an architect for many years, working on complex and multifunctional projects. My job was not only about drawing and designing, but I also covered "the dark side" of architecture - calculations, negotiations with specialists in other fields (like construction, ventilation, electrical), research and presentation. Years of experience tought me how to organize my time and estimate efforts necessary to meet the required deadlines or requirements. Working in Architecture has tought me to never stop learning and never give up on trying to look for a best possible solution. Impossible sometimes just means lack of knowledge or experience. Impossible means searching for freedom.</p>
+                    <div class="about-side column">
+                        <div class="about-header section-header row">
+                            <h3 class="about-heading section-heading">ABOUT ME</h3>
+                        </div>
+                        <div class="about-content section-content row">
+                            <p class="about-text section-text row">
+                                I was an architect for many years, working on complex and 
+                                multifunctional projects. My job was not only about drawing and designing, 
+                                but I also covered "the dark side" of architecture - calculations, 
+                                negotiations with specialists in other fields (like construction, 
+                                ventilation, electrical), research and presentation. Years of experience 
+                                tought me how to organize my time and estimate efforts necessary to meet 
+                                the required deadlines or requirements. Working in Architecture has 
+                                tought me to never stop learning and never give up on trying to look 
+                                for a best possible solution. Impossible sometimes just means lack of 
+                                knowledge or experience. Impossible means searching for freedom.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- <div class="row-break"></div> -->
-
-            <section class="section-container ideas" id="ideas">
+            <section class="skills" id="skills">
                 <div class="row-break"></div>
-                <div class="ideas-container">
-                    <div class="ideas-img">
+                    <div class="skills-container section-container row">
+                        
+                        <div class="skills-header section-header row">
+                            <h3 class="section-heading">SKILLS</h3>
+                        </div>
+                        <div class="skills-content section-content row">
+                            <div class="skills-item column">
+                                <div class="skills-icons row">
+                                    <p class="skills-icon column"><i class="fab fa-figma"></i></p>
+                                </div>
+                                <h4 class="skills-heading">UI/UX</h4>
+                                <p>FIGMA</p>
+                            </div>
+                            <div class="skills-item column">
+                                <div class="skills-icons row">
+                                    <p class="skills-icon column"><i class="fab fa-html5"></i></p>
+                                    <p class="skills-icon column"><i class="fab fa-css3-alt"></i></p>
+                                    <p class="skills-icon column"><i class="fab fa-js"></i></p>
+                                    <p class="skills-icon column"><i class="fab fa-react"></i></p>
+
+                                </div>
+                                <h4 class="skills-heading">FRONT END</h4>
+                                <p>HTML, CSS, JS, REACT</p>
+                            </div>
+                            <div class="skills-item column">
+                                <div class="skills-icons row">
+                                    <p class="skills-icon column"><i class="fab fa-php"></i></p>
+                                </div>
+                                <h4 class="skills-heading">BACK END</h4>
+                                <p>PHP</p>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="ideas-content">
-                        <h3 class="ideas-header">What is it, this thing about me?</h3>
-                        <p class="ideas-text">I was an architect for many years, working on complex and multifunctional projects. My job was not only about drawing and designing, but I also covered "the dark side" of architecture - calculations, negotiations with specialists in other fields (like construction, ventilation, electrical), research and presentation. Years of experience tought me how to organize my time and estimate efforts necessary to meet the required deadlines or requirements. Working in Architecture has tought me to never stop learning and never give up on trying to look for a best possible solution. Impossible sometimes just means lack of knowledge or experience. Impossible means searching for freedom.</p>
+            </section>
+
+            <section class="gallery" id="gallery">
+                <div class="row-break"></div>
+                <div class="gallery-container section-container column">
+                    <div class="gallery-header section-header row">
+                        <h3 class="gallery-heading section-heading">GALLERY</h3>
                     </div>
+                    <div class="gallery-content section-content">
+                        <div class="gallery-img gallery-img-1 row">
+                            <p class="gallery-text">SEA TOWERS, GDYNIA</p>
+                        </div>
+                        <div class="gallery-img gallery-img-2">
+                            <p class="gallery-text">RECIFE, BRAZYLIA</p>
+                        </div>
+                        <div class="gallery-img gallery-img-3">
+                            <p class="gallery-text">RGN, BRAZYLIA</p>
+                        </div>
+                        <div class="gallery-img gallery-img-4">
+                            <p class="gallery-text">SALVADOR, BRAZYLIA</p>
+                        </div>
+                        <div class="gallery-img gallery-img-5">
+                            <p class="gallery-text">SEA TOWERS, GDYNIA</p>
+                        </div>
+                        <div class="gallery-img gallery-img-6">
+                            <p class="gallery-text">RIO DE JANEIRO, BRAZYLIA</p>
+                        </div>
+                        <div class="gallery-img gallery-img-7">
+                            <p class="gallery-text">BRASILIA, BRAZYLIA</p>
+                        </div>
+                        <div class="gallery-img gallery-img-8">
+                            <p class="gallery-text">NITEROI, BRAZYLIA</p>
+                        </div>
                 </div>
             </section>
 
-            <section>
-                
-            </section>
-            <aside>
-
-            </aside>
         </main>
+
+        <div class="row-break"></div>
+        <footer class="footer section-container row" id="contact">
+            <div class="footer-contact column">
+                <div class="footer-form-item row">
+                    <div class="column width-25"></div>
+                    <div class="column width-75"><h4 class="footer-heading">Contact me!</h4></div>
+                </div>
+                <form class="footer-form" method="POST">
+                    <div class="footer-form-item row">
+                        <div class="column width-25">
+                          <label for="name">Name:</label>
+                        </div>
+                        <div class="column width-75">
+                          <input type="text" id="name" name="name" placeholder="Your name...">
+                        </div>
+                    </div>
+                    <div class="footer-form-item row">
+                        <div class="column width-25">
+                          <label for="email">Email:</label>
+                        </div>
+                        <div class="column width-75">
+                          <input type="email" id="email" name="email" placeholder="Your email...">
+                        </div>
+                    </div>
+                    <div class="footer-form-item row">
+                        <div class="column width-25">
+                          <label for="subject">Subject:</label>
+                        </div>
+                        <div class="column width-75">
+                          <select id="subject" name="subject">
+                            <option value="sendCV">I would like to see your CV</option>
+                            <option value="jobOffer">I have a job offer for you</option>
+                            <option value="workTogether" selected>Let's make a project together</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="footer-form-item row">
+                        <div class="column width-25">
+                          <label for="Message">Message:</label>
+                        </div>
+                        <div class="column width-75">
+                          <textarea id="message" name="message" placeholder="Tell me more about your ideas!"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="hero-button footer-button" type="submit" value="Submit"><i class="fas fa-paper-plane form-icon"></i><span>Send!</span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-media column">
+                    <p class="footer-text">
+                        If you have any questions, doubts, took a perfect picture of a cashew fruit, or just had a crazy idea you want to share with me, do not hesitate, leave me a message!
+                    </p>
+                    <div class="media-icons row">
+                        <p class="media-icon">
+                            <a href="https://www.facebook.com/jagringa"><i class="fab fa-facebook-f"></i></a>
+                        </p>
+                        <p class="media-icon">
+                            <a href="http://jagringa.blogspot.com/"><i class="fab fa-blogger-b"></i></a>
+                        </p>
+                        <p class="media-icon">
+                            <a href="https://www.linkedin.com/in/boszkoweronika/"><i class="fab fa-linkedin-in"></i></a>
+                        </p>
+                        <p class="media-icon">
+                            <a href="https://github.com/vieraboschkova"><i class="fab fa-github-alt"></i></a>
+                        </p>
+                        <p class="media-icon">
+                            <a href="http://corona-feed.com/pt/brasil"><i class="fas fa-virus"></i></i></a>
+                        </p>
+
+                    </div>
+                    <div class="footer-address">
+                        <p>vBS</p>
+                        <p>ul. Frontowa</p>
+                        <p>Gdańsk, Pomorskie</p>
+                        <p>+48 000 000 000</p>
+                        <p><a href="mailto:vieraboschkova@gmail.com">Send me an email</a></p>
+    
+                    </div>
+
+            </div>
+        </footer>
+        <footer class="copyrights">Copyrights © 2020  vBS</footer>
     </div>
  
 </body>
