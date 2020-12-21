@@ -231,11 +231,13 @@ input[type=text], input[type=email], select, textarea{
     text-align: center;
     position: relative;
     /* box-shadow: 0 5px 0 var(--primary-text-color); */
+    transition: all .2s linear ;
 }
 
 .hero-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     background-color: var(--background-color);
+    transition: all .2s linear ;
 }
 
 .hero-button:active {
