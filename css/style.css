@@ -57,6 +57,19 @@ input[type=text], input[type=email], select, textarea{
 }
 
 /**** PAGE ****/
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1120px 1fr;
@@ -129,10 +142,6 @@ input[type=text], input[type=email], select, textarea{
 
 .header-logo a:hover {
     border-bottom: 2px solid var(--secondary-color);
-}
-
-.header-logo:hover {
-    transform: scale(1.03);
 }
 
 .header-logo:active {
@@ -219,15 +228,20 @@ input[type=text], input[type=email], select, textarea{
     background-color: var(--secondary-color);
     opacity: .7;
     border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    /* box-shadow: 0 5px 0 var(--primary-text-color); */
 }
 
 .hero-button:hover {
-    transform: scale(1.03);
+    transform: scale(1.1);
     background-color: var(--background-color);
 }
 
 .hero-button:active {
-    transform: translateY(5px);
+    /* transform: translateY(5px); */
+    top: 5px;
+    /* box-shadow: none; */
 }
 
 .hero-button:focus {
@@ -567,9 +581,6 @@ label {
     .header-navigation {
         margin-right: 2rem;
     }
-    .header-item {
-
-    }
     .container {
         grid-template-columns: 2rem 1fr 2rem;
     }
@@ -813,6 +824,7 @@ label {
     .media-icons{
         flex-direction: column;
         max-width: 3rem;
+        margin-left: -.5rem;
     }
     .row-break {
         display: none;
