@@ -1,11 +1,9 @@
-  
 /*  –––––––––––––––––––––––VARIABLES––––––––––––––––––––––––––– */
 :root {
 	--primary-color: #80BEAF;
     --secondary-color: #b3ddd1;
     --third-color: #d1dce2;
     --fourth-color: #f5b994;
-    /* --fifth-color: #ee9c6c; */
 
     --background-color:#f8f7f3;
     --background-color-secondary:#010101;
@@ -230,7 +228,6 @@ input[type=text], input[type=email], select, textarea{
     border-radius: 1rem;
     text-align: center;
     position: relative;
-    /* box-shadow: 0 5px 0 var(--primary-text-color); */
     transition: all .2s linear ;
 }
 
@@ -241,9 +238,7 @@ input[type=text], input[type=email], select, textarea{
 }
 
 .hero-button:active {
-    /* transform: translateY(5px); */
     top: 5px;
-    /* box-shadow: none; */
 }
 
 .hero-button:focus {
@@ -322,7 +317,6 @@ input[type=text], input[type=email], select, textarea{
 /********* SKILLS **********/
 
 .skills-header {
-    /* padding: 0 0 0 3rem; */
     font-size: 2rem;
 }
 
@@ -573,6 +567,7 @@ label {
 
 /********** MEDIA QUERIES **********/
 
+/****** MAX 1200px *******/
 @media only screen and (max-width: 1200px) {
     .header {
         padding: unset;
@@ -588,6 +583,7 @@ label {
     }
 }
 
+/****** MAX 992px *******/
 @media only screen and (max-width: 992px) {
     .header-logo {
         margin-left: 2rem;
@@ -608,7 +604,7 @@ label {
         padding-right: 0.25rem;
     }
 }
-
+/****** MAX 688px *******/
 @media only screen and (max-width: 688px) {
     .container {
         grid-template-columns: 0 1fr 0;
@@ -767,7 +763,7 @@ label {
         transform: translate(-100%, 0);
     }
 }
-
+/****** MAX 440px *******/
 @media only screen and (max-width: 440px) {
     .toTop {
         bottom: 1rem;
@@ -819,9 +815,19 @@ label {
         align-items: unset;
         height: 300px;
     }
+    .footer-form-item {
+        flex-direction: column;
+    }
+    .footer-form-item label {
+        align-self: flex-start;
+    }
     .footer-media {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    .footer-button {
+        margin-left: unset;
+        width: 100%;
     }
     .media-icons{
         flex-direction: column;
@@ -832,7 +838,14 @@ label {
         display: none;
     }
 }
-
+/****** MAX 320px *******/
 @media only screen and (max-width: 320px) {
-
+    .footer-contact, .footer-media, .section-content, .section-header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .gallery-content {
+        padding-left: unset;
+        padding-right: unset;
+    }
 }
